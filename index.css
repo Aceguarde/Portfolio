@@ -1,0 +1,29 @@
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(20,54,94);
+    }
+    @font-face {
+  font-family: Lato;
+  src: url(Fonts/Lato/Lato-Light.ttf);
+    }
+
+    #container {
+        width: 50%;
+        height: 65px;
+        padding: 0px;
+        background-color: rgb(38,90,151);
+        margin-top: 50px;
+        margin-left: 50%;
+    }
+    h1 {
+        font-style: normal;
+        font-family: Lato;
+        text-align: center;
+        font-size: 40px;
+        margin: 0px;
+        color: white;
+    }
