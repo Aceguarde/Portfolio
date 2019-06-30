@@ -4,7 +4,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: rgb(20,54,94);
+        background-color: "White";
     }
     @font-face {
   font-family: Lato;
@@ -12,17 +12,26 @@
     }
 
     #container {
-        width: 50%;
-        height: 65px;
+        position: absolute;
+        right:0px;
+        top:60px;
+        width: 30%;
+        height: 60px;
         padding: 0px;
         background-color: rgb(38,90,151);
         margin-top: 50px;
-        margin-left: 50%;
+        margin-left: 70%;
     }
+    #scenery {
+      position: absolute;
+      margin: 0;
+      background-color: rgba(20,54,94, .5);
+    }
+
     h1 {
         font-style: normal;
         font-family: Lato;
-        text-align: center;
+        text-align: right;
         font-size: 40px;
         margin: 0px;
         color: white;
