@@ -7,11 +7,11 @@ window.addEventListener("resize",
 function (event) {
   canvas.width = window.innerWidth;
   canvas.height = (window.innerHeight)/3;
-
-
-
 })
 
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
 var c = canvas.getContext("2d");//stands for Context
 
 
