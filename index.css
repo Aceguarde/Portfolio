@@ -8,30 +8,32 @@
     }
     @font-face {
   font-family: Lato;
-  src: url(Fonts/Lato/Lato-Light.ttf);
+  src: url(Fonts/Lato/Lato-Hairline.ttf);
     }
+
 
     #container {
         position: absolute;
-        right:0px;
-        top:60px;
-        width: 30%;
+        left:0px;
+        top:170px;
+        width: 40%;
         height: 60px;
         padding: 0px;
-        background-color: rgb(38,90,151);
-        margin-top: 50px;
-        margin-left: 70%;
+        margin-top: 10px;
     }
     #scenery {
       position: absolute;
+      top:0;
+      left:0;
       margin: 0;
-      background-color: rgba(20,54,94, .5);
+      background-image: linear-gradient(to right,rgb(1,22,63), black);
+      z-index:-1;
     }
 
     h1 {
         font-style: normal;
         font-family: Lato;
-        text-align: right;
+        text-align: left;
         font-size: 40px;
         margin: 0px;
         color: white;
