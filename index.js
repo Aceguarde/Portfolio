@@ -1,17 +1,14 @@
 //Barebone Canvas Presets
 var canvas = document.getElementById("scenery");
 canvas.width = window.innerWidth;
-canvas.height = (window.innerHeight)/3;
+canvas.height = window.innerHeight;
 
 window.addEventListener("resize",
 function (event) {
   canvas.width = window.innerWidth;
-  canvas.height = (window.innerHeight)/3;
+  canvas.height = window.innerHeight;
 })
 
-particlesJS.load('particles-js', 'assets/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
 var c = canvas.getContext("2d");//stands for Context
 
 
@@ -64,7 +61,7 @@ function Circle(x, y, dx, radius) {
           if(this.x < 0){
             this.x = Math.random() * (((innerWidth)/1.5)+(innerWidth/2) - radius * 2) + radius;
             this.x+= innerWidth/2;
-            this.y = Math.random() * ((innerHeight)/3 - radius * 2) + radius;
+            this.y = Math.random() * (innerHeight - radius * 2) + radius;
           }
     //     if(this.radius < maxRadius) {
     //       this.radius += 2.5;
@@ -89,11 +86,11 @@ function Circle(x, y, dx, radius) {
 function init() {
       circleArray = [];
 
-  for(var i = 0; i < 75; i++){
+  for(var i = 0; i < 125; i++){
       var radius = Math.random() * 4 + 1;
       var x = Math.random() * (((innerWidth)/1.5)+(innerWidth/2) - radius * 2) + radius;
       x+= innerWidth/2;
-      var y = Math.random() * ((innerHeight)/3 - radius * 2) + radius;
+      var y = Math.random() * (innerHeight - radius * 2) + radius;
       var dx = 0;
 
       circleArray.push(new Circle(x,y, dx, radius));
@@ -103,7 +100,7 @@ function init() {
 
     function animate(){
       requestAnimationFrame(animate);
-      c.clearRect(0,0,innerWidth, (innerHeight)/3);
+      c.clearRect(0,0,innerWidth, innerHeight);
       for(var i = 0; i < circleArray.length; i++){
         circleArray[i].update();
       }

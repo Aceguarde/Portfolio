@@ -18,24 +18,7 @@ overflow-y:hidden;
   font-family: Lato-Normal;
   src: url(Fonts/Lato/Lato-Light.ttf);
     }
-    #aboutme{
-      position:absolute;
-      left: 50%;
-      top:10px;
-      z-index:1;
-    }
-    #projects{
-      position:absolute;
-      left: 75%;
-      top:10px;
-      z-index:1;
-    }
-    #Homepage{
-      position:absolute;
-      left:25%
-      top:10px;
-      z-index:1;
-    }
+
 
     #container {
         position: absolute;
@@ -81,16 +64,7 @@ overflow-y:hidden;
       margin:5px;
       width:50%;
     }
-    a {
-      position:absolute;
-      font-style: normal;
-      text-decoration: underline;
-      font-family: Lato;
-      text-align: center;
-      font-size: 30px;
-      margin: 0px;
-      color: WHITE;
-    }
+
     p {
       font-family:Lato-normal;
       font-style: normal;
